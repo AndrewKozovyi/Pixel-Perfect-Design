@@ -1,0 +1,29 @@
+<app-auth-layout>
+  <div left-side class="form-wrapper">
+    <div class="logo">Hero<span class="thin-part">Habit</span></div>
+    <h1 class="sign-title">USER LOGIN</h1>
+
+    <div class="actions">
+      <div class="action-field">
+        <input class="sign-input" type="email" placeholder="Enter email" />
+        <img class="icon-right icon-email" src="email.svg"/>
+      </div>
+
+      <div class="action-field">
+        <input class="sign-input" [type]="hidden ? 'password' : 'text'" placeholder="Enter password" />
+        <img class="icon-second-right" [src]="hidden ? 'show_btn.svg' : 'hide_btn.svg'" (click)="hidden=!hidden">
+        <img class="icon-right" src="password.svg"/>
+      </div>
+    </div>
+
+    <div class="forgot-password">Forgot password?</div>
+    <button class="sign-btn">Login</button>
+    <div class="signup-prompt">Don't have an account? <a class="sign-link">Sign up</a> </div>
+  </div>
+
+  <div right-side class="right-side-content">
+    <img class="logo-img" src="/logo.svg" alt="Hero Logo">
+    <div class="welcome-msg">Welcome back <br/> to Hero<span class="thin-part">Habit</span></div>
+    <div class="sub-msg">please login to continue</div>
+  </div>
+</app-auth-layout>

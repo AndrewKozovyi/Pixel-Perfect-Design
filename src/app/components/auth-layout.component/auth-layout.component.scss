@@ -1,0 +1,53 @@
+@import 'variables';
+
+.auth-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  width: 100%;
+
+  .left-block {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .right-block {
+    background: linear-gradient(180deg, $gradient-top 0%, $gradient-bottom 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image:
+        url('/star-1.svg'), url('/star-2.svg'), url('/star-3.svg'),
+        url('/star-4.svg'), url('/star-5.svg'), url('/star-6.svg'),
+        url('/star-7.svg'), url('/star-8.svg'), url('/star-9.svg'),
+        url('/star-10.svg');
+      background-position:
+        5% 29px,
+        37% 39px,
+        70% 42px,
+        92% 47px,
+        15% 104px,
+        52% 116px,
+        33% 187px,
+        82% 161px,
+        7% 232px,
+        95% 248px;
+
+      background-repeat: no-repeat;
+    }
+  }
+}

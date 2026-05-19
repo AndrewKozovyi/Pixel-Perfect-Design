@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  position: absolute;
+  left: 34px;
+  top: 34px;
+  font-size: 24px;
+  font-weight: 700;
+
+  .thin-part {
+    font-weight: 400;
+  }
+}
+
+.sign-title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.login-gradient {
+  background-image: linear-gradient(180deg, #DF99F8 0%, #7B4DF4 100%);
+  background-color: #A57CF4;
+
+  height: 100%;
+  width: 100%;
+}
