@@ -37,12 +37,12 @@
   }
 
   .icon-right {
-    top: 4px;
+    top: 0;
     right: 0;
   }
 
   .icon-second-right {
-    top: 12px;
+    top: 8px;
     right: 50px;
     cursor: pointer;
   }
@@ -115,4 +115,11 @@
     font-size: clamp(20px, 2vw, 28px);
     text-align: center;
   }
+}
+
+.signup-prompt {
+  text-align: center;
+  font-size: 26px;
+  height: 32px;
+  .sign-link { color: #AB7EF1; cursor: pointer; }
 }

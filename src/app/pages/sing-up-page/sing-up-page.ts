@@ -3,12 +3,12 @@ import {AuthLayoutComponent} from '../../components/auth-layout.component/auth-l
 import {RouterLink} from '@angular/router';
 
 @Component({
-  selector: 'app-login-page',
+  selector: 'app-sing-up-page',
   imports: [AuthLayoutComponent, RouterLink],
   standalone: true,
-  templateUrl: './login-page.html',
-  styleUrl: './login-page.scss',
+  templateUrl: './sing-up-page.html',
+  styleUrl: './sing-up-page.scss',
 })
-export class LoginPage {
+export class SingUpPage {
   public hidden = true;
 }

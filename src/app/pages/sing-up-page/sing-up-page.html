@@ -1,0 +1,37 @@
+<app-auth-layout>
+  <div left-side class="form-wrapper">
+    <div class="logo">Hero<span class="thin-part">Habit</span></div>
+    <h1 class="sign-title">SIGN UP</h1>
+
+    <div class="actions">
+      <div class="action-field">
+        <input class="sign-input" type="email" placeholder="Enter email" />
+        <img class="icon-right icon-email" src="email.svg" alt="Email Icon"/>
+      </div>
+
+      <div class="action-field">
+        <input class="sign-input" [type]="hidden ? 'password' : 'text'" placeholder="Create password" />
+        <img class="icon-second-right" [src]="hidden ? 'show_btn.svg' : 'hide_btn.svg'" (click)="hidden=!hidden" alt="Toggle Password Visibility">
+        <img class="icon-right" src="password.svg" alt="Password Icon"/>
+      </div>
+
+      <div class="action-field">
+        <input class="sign-input" type="text" placeholder="Enter username" />
+        <img class="icon-right" src="user.svg" alt="User Icon"/>
+      </div>
+    </div>
+
+    <button class="sign-btn mt-32">Sign Up</button>
+
+    <div class="signup-prompt">
+      Already have an account? <a class="sign-link" routerLink="/login">Log in</a>
+    </div>
+  </div>
+
+  <div right-side class="right-side-content">
+    <img class="logo-img" src="/logo.svg" alt="Hero Logo">
+
+    <div class="welcome-msg">Welcome to <br/> Hero<span class="thin-part">Habit</span></div>
+    <div class="sub-msg">please sign up to continue</div>
+  </div>
+</app-auth-layout>
