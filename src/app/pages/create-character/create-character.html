@@ -1,0 +1,22 @@
+<div class="centered-page">
+  <app-logo></app-logo>
+
+  <h1 class="page-title">Character creation</h1>
+
+  <div class="content-wrapper">
+    <p class="section-label">Choose your main characteristic</p>
+    <div class="options-row characteristics">
+      <button class="option-btn" [class.active-creativity]="selectedCharacteristic === 'creativity'" (click)="selectedCharacteristic = 'creativity'">Creativity</button>
+      <button class="option-btn" [class.active-strength]="selectedCharacteristic === 'strength'" (click)="selectedCharacteristic = 'strength'">Strength</button>
+      <button class="option-btn" [class.active-intelligence]="selectedCharacteristic === 'intelligence'" (click)="selectedCharacteristic = 'intelligence'">Intelligence</button>
+    </div>
+
+    <p class="section-label">Choose a gender of your character</p>
+    <div class="options-row gender-row">
+      <button class="option-btn" [class.active-purple]="selectedGender === 'male'" (click)="selectedGender = 'male'">Male</button>
+      <button class="option-btn" [class.active-purple]="selectedGender === 'female'" (click)="selectedGender = 'female'">Female</button>
+    </div>
+  </div>
+
+  <button class="gradient-btn save-btn">Save</button>
+</div>
